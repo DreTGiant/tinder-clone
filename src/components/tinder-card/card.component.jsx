@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
 import "./card.styles.css";
+import database from "../../firebase.js";
 
 function Card() {
-  const [people, setpeople] = useState([
-    {
-      name: "batman",
-      url:
-        "https://i.pinimg.com/originals/dd/e4/da/dde4da8175c71a2559bba80224818f82.jpg",
-    },
-    {
-      name: "superman",
-      url: "https://pmcvariety.files.wordpress.com/2018/09/cavill-2.jpg",
-    },
-  ]);
+  const [people, setPeople] = useState([]);
+
+  useEffect(() => {
+    const unsubscribe = database
+      .collection("people")
+      .onSnapshot((snap) => setPeople(snap.docs.map((doc) => doc.data())));
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
 
   return (
     <div>

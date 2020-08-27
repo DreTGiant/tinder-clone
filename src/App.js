@@ -3,26 +3,20 @@ import "./App.css";
 import Header from "./components/header/header.component";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Card from "./components/tinder-card/card.component";
+import SwipeButtons from "./components/buttons/swipeButtons.component";
 
 function App() {
   return (
     <div className="App">
-      {/* Header */}
       <Header />
-      <Card />
       <Router>
         <Switch>
-          <Route path="/chat">
-            <p>chat Page</p>
-          </Route>
+          <Route path="/chat"></Route>
           <Route path="/">
-            <p>Home Page</p>
+            <Card />
+            <SwipeButtons />
           </Route>
         </Switch>
-        {/* Cards */}
-        {/* Buttons below cards */}
-        {/* Chats Screen */}
-        {/* Individual chat screen */}
       </Router>
     </div>
   );
