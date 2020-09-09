@@ -8,8 +8,8 @@ import SwipeButtons from "./components/buttons/swipeButtons.component";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route path="/chat"></Route>
           <Route path="/">
