@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
         <Switch>
-          <Route path="/chat"></Route>
+          <Route path="/chat">
+            <Header backButton="/" />
+          </Route>
           <Route path="/">
+            <Header />
             <Card />
             <SwipeButtons />
           </Route>
