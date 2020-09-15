@@ -11,30 +11,6 @@ function Chats() {
         timestamp="20 minutes ago"
         profilepic="..."
       />
-      <Chat
-        name="SpiderMan"
-        message="whats up?"
-        timestamp="20 minutes ago"
-        profilepic="..."
-      />
-      <Chat
-        name="SpiderMan"
-        message="whats up?"
-        timestamp="20 minutes ago"
-        profilepic="..."
-      />
-      <Chat
-        name="SpiderMan"
-        message="whats up?"
-        timestamp="20 minutes ago"
-        profilepic="..."
-      />
-      <Chat
-        name="SpiderMan"
-        message="whats up?"
-        timestamp="20 minutes ago"
-        profilepic="..."
-      />
     </div>
   );
 }
