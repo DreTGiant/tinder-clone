@@ -1,5 +1,4 @@
 # Tinder Clone
-One to two paragraph statement about your product and what it does.
 Working with React, I recreated a few screens that you would see on the Tinder app
 
 ## Release History
@@ -8,4 +7,4 @@ Working with React, I recreated a few screens that you would see on the Tinder a
 ## Meta
 Andre Massey 
 
-andremassey.com 
+[(https://andremassey.com)]
